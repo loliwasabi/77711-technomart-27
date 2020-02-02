@@ -3,18 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   <header>
     <div>
       <a>
-        <img src="https://via.placeholder.com/150x100" alt="Логотип">
+        <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип Техномарт">
       </a>
-      <!--Здесь будет форма поиска-->
+
+        <form action="" method="post">
+        <label for="search" class="visually-hidden">Поиск</label>
+        <input type="search" name="search" id="search" placeholder="Поиск:" autofocus>
+        </form>
+
       <a href="">Закладки: 0</a>
       <a href="">Корзина: 0</a>
       <a href="">Оформить заказ</a>
-         </div>
+    </div>
 
     <div>
       <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
@@ -25,10 +31,12 @@
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     </div>
 
-    <ul>
-      <li><a href="">Войти</a></li>
-      <li><a href="">Регистрация</a></li>
-    </ul>
+    <div>
+      <ul>
+        <li><a href="">Войти</a></li>
+        <li><a href="">Регистрация</a></li>
+      </ul>
+    </div>
 
     <nav>
       <ul>
@@ -41,26 +49,61 @@
         <li><a href="">Контакты</a></li>
       </ul>
     </nav>
-
   </header>
 
   <main>
-    <h1>Интернет-магазин "Техномарт"</h1>
+    <h1 class="visually-hidden">Интернет-магазин "Техномарт"</h1>
 
-    <section>
-      <h2>Промо-блок</h2>
-      <ul>
-        <li><h3>Материалы</h3><a>на любой вкус</a></li>
-        <li><h3>Инструмент</h3><a>на все случаи</a></li>
-        <li><h3>Техника</h3><a>для стройки</a></li>
-        <li><h3>Скидки 50%</h3><a>на 350 товаров</a></li>
-        <li><h3>Доставка</h3><a>бесплатно</a></li>
-      </ul>
-      <div>
-        <h3>Дрели соседям на радость</h3>
-        <a href="">Открыть каталог</a>
-      </div>
-    </section>
+    <div>
+      <h2 class="visually-hidden">Промо-блок</h2>
+      <section>
+        <ul>
+          <li>
+            <h3>Материалы</h3>
+            <a>на любой вкус</a>
+          </li>
+          <li>
+            <h3>Инструмент</h3>
+            <a>на все случаи</a>
+          </li>
+          <li>
+            <h3>Техника</h3>
+            <a>для стройки</a>
+          </li>
+          <li>
+            <h3>Скидки 50%</h3>
+            <a>на 350 товаров</a>
+          </li>
+          <li>
+            <h3>Доставка</h3>
+            <a>бесплатно</a>
+          </li>
+        </ul>
+      </section>
+
+
+      <section>
+        <h3 class="visually-hidden">Слайдер</h3>
+        <div>
+          <img src="img/slider-1.jpg" alt="Дрель в работе">
+          <span>Дрели</span>
+          <span>Соседям на радость</span>
+          <button type="button" aria-label="Назад"></button>
+          <button type="button" aria-label="Вперед"></button>
+          <a href="catalog.html">Открыть каталог</a>
+        </div>
+
+        <div>
+          <img src="img/slider-2.jpg" alt="Перфоратор в работе">
+          <span>Перфораторы</span>
+          <span>Настоящие мужские игрушки</span>
+          <button type="button" aria-label="Назад"></button>
+          <button type="button" aria-label="Вперед"></button>
+          <a href="catalog.html">Открыть каталог</a>
+        </div>
+      </section>
+    </div>
+
 
     <section>
       <h2>Популярные товары:</h2>
@@ -71,7 +114,7 @@
             <a href="">Перфоратор BOSCH BFG 9000</a>
           </h3>
           <a href="">
-            <img src="https://via.placeholder.com/150x100" width="" height="" alt="Перфоратор BOSCH BFG 3000">
+            <img src="img/perforator-bosch-bfg-9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
           </a>
           <span>32500 Р.</span>
           <span>25500 Р.</span>
@@ -83,7 +126,7 @@
             <a href="">Перфоратор BOSCH BFG 3000</a>
           </h3>
           <a href="">
-            <img src="https://via.placeholder.com/150x100" width="" height="" alt="Перфоратор BOSCH BFG 6000">
+            <img src="img/perforator-bosch-bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
           </a>
           <span>25500 Р.</span>
           <span>15500 Р.</span>
@@ -95,7 +138,7 @@
             <a href="">Перфоратор BOSCH BFG 6000</a>
           </h3>
           <a href="">
-            <img src="https://via.placeholder.com/150x100" width="" height="" alt="Перфоратор BOSCH BFG 2000">
+            <img src="img/perforator-bosch-bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
           </a>
           <span>30500 Р.</span>
           <span>25500 Р.</span>
@@ -107,7 +150,7 @@
             <a href="">Перфоратор BOSCH BFG 2000</a>
           </h3>
           <a href="">
-            <img src="https://via.placeholder.com/150x100" width="" height="" alt="Перфоратор BOSCH BFG 3000">
+            <img src="img/perforator-bosch-bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
           </a>
           <span>12500 Р.</span>
           <button type="button">Купить</button>
@@ -116,52 +159,54 @@
       </ul>
     </section>
 
+
     <section>
       <h2>Популярные производители:</h2>
       <a href="">Все производители</a>
       <ul>
         <li>
           <a href="">
-            <img src="https://via.placeholder.com/150x100" alt="Bosch">
+            <img src="img/logo-bosch.png" width="126" height="37" alt="Логотип Bosch">
           </a>
         </li>
         <li>
           <a href="">
-            <img src="https://via.placeholder.com/150x100" alt="Makita">
+            <img src="img/logo-makita.png" width="123" height="40" alt="Логотип Makita">
           </a>
         </li>
         <li>
           <a href="">
-            <img src="https://via.placeholder.com/150x100" alt="Dewalt">
+            <img src="img/logo-dewalt.png" width="146" height="44" alt="Логотип Dewalt">
           </a>
         </li>
         <li>
           <a href="">
-            <img src="https://via.placeholder.com/150x100" alt="Интерскол">
+            <img src="img/logo-interskol.png" width="200" height="88" alt="Логотип Интерскол">
           </a>
         </li>
         <li>
           <a href="">
-            <img src="https://via.placeholder.com/150x100" alt="Hitachi">
+            <img src="img/logo-hitachi.png" width="169" height="31" alt="Логотип Hitachi">
           </a>
         </li>
         <li>
           <a href="">
-            <img src="https://via.placeholder.com/150x100" alt="LG">
+            <img src="img/logo-lg.png" width="121" height="73" alt="Логотип LG">
           </a>
         </li>
         <li>
           <a href="">
-            <img src="https://via.placeholder.com/150x100" alt="AEG">
+            <img src="img/logo-aeg.png" width="151" height="96" alt="Логотип AEG">
           </a>
         </li>
         <li>
           <a href="">
-            <img src="https://via.placeholder.com/150x100" alt="Metabo">
+            <img src="img/logo-metabo.png" width="204" height="69" alt="Логотип Metabo">
           </a>
         </li>
       </ul>
     </section>
+
 
     <section>
       <h2>Сервисы</h2>
@@ -169,30 +214,30 @@
       <ul>
         <li>
           <a href="">Доставка</a>
+          <h3>Доставка</h3>
           <p>Доставка Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-          <img src="https://via.placeholder.com/150x100" alt="Машина">
+          <img src="img/services-icon-1.png" width="468" height="261" alt="">
         </li>
         <li>
           <a href="">Гарантия</a>
-          <p></p>
-          <img src="https://via.placeholder.com/150x100" alt="">
+          <h3>Гарантия</h3>
+          <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+          <img src="img/services-icon-2.png" width="389" height="283" alt="">
         </li>
         <li>
           <a href="">Кредит</a>
-          <p></p>
-          <img src="https://via.placeholder.com/150x100" alt="">
+          <h3>Кредит</h3>
+          <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+          <img src="img/services-icon-3.png" width="465" height="285" alt="">
         </li>
       </ul>
-      </section>
+    </section>
+
 
     <section>
       <h2>КОМПАНИЯ «Техномарт»</h2>
-      <p>
-        Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
-      </p>
-      <p>
-        Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:
-      </p>
+      <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+      <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
       <ul>
         <li>Деловые линии</li>
         <li>Автотрейдинг</li>
@@ -201,24 +246,54 @@
       <a href="">Подробнее о компании</a>
     </section>
 
+
     <section>
       <h2>КОНТАКТЫ</h2>
-      <p>
-    Вы можете забрать товар сами, заехав в наш офис:
-      </p>
-      <!-- Код карты-->
+      <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+      <a href="">
+        <img src="img/map.png" width="300" height="158" alt="Карта проезда">
+      </a>
+
+      <div>
+        <h2>Как до нас добраться</h2>
+        <p>
+          <img src="img/map-expanded.png" width="970" height="476" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </p>
+        <button type="button" aria-label="Закрыть"></button>
+      </div>
+
       <a href="">Заблудились? Напишите нам!</a>
+    </section>
+
+
+    <section>
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <form action="" method="post">
+        <p>
+          <label for="user-name">Ваше имя:</label>
+          <input id="user-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="user-email">Ваш e-mail:</label>
+          <input id="user-email" type="email" name="email" value="" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="message-field">Текст письма:</label>
+          <textarea id="message-field" name="message" placeholder="В свободной форме" rows="5" cols="60"></textarea>
+          <button type="submit">Отправить</button>
+        </p>
+      </form>
+      <button type="button" aria-label="Закрыть"></button>
     </section>
   </main>
 
   <footer>
     <a>
-      <img src="https://via.placeholder.com/150x100" alt="Логотип">
+      <img src="img/logo-technomart.svg" width="138" height="23" alt="Логотип Техномарт">
     </a>
 
-    <p>
-      г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+    <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+    <a href="tel:+78125550555">+7 (812) 555-05-55</a>
 
     <div>
       <ul>
