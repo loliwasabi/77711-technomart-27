@@ -51,7 +51,7 @@
       </div>
     </div>
 
-    <div class="bottom-header-navigation">
+    <div class="bottom-header-nav">
       <div class="wrap">
         <div class="bottom-header-information">
           <div class="header-shop-description">
@@ -80,7 +80,6 @@
           </ul>
         </div>
 
-
       </div>
       <nav class="shop-navigation">
         <ul>
@@ -94,8 +93,7 @@
         </ul>
       </nav>
     </div>
-    </div>
-  </header>
+ </header>
 
   <h1 class="visually-hidden">Интернет-магазин "Техномарт"</h1>
   <div class="showcase">
@@ -115,24 +113,24 @@
           <li>
             <div class="showcase-slider">
               <ul class="showcase-slider-list">
-                <li class="slide-1">
+                <li class="showcase-item slide-1">
                   <h2>Перфораторы</h2>
                   <p>Настоящие мужские игрушки</p>
                   <a class="red-button showcase-button" href="catalog.html">Открыть каталог</a>
                 </li>
-                <li class="slide-2">
+                <li class="showcase-item slide-2 slide-show">
                   <h2>Дрели</h2>
                   <p>Соседям на радость!</p>
                   <a class="red-button showcase-button" href="catalog.html">Открыть каталог</a>
                 </li>
               </ul>
               <div class="showcase-slider-controls">
-                <button class="showcase-slider-control-l" type="button" aria-label="Листать слайды влево"></button>
-                <button class="showcase-slider-control-r" type="button" aria-label="Листать слайды вправо"></button>
+                <button class="showcase-slider-l slide-show" type="button" aria-label="Листать слайды влево"></button>
+                <button class="showcase-slider-r" type="button" aria-label="Листать слайды вправо"></button>
               </div>
               <div class="showcase-slider-indicators">
                 <button class="slider-radio-1" type="button" aria-label="Первый слайд"></button>
-                <button class="slider-radio-2" type="button" aria-label="Второй слайд"></button>
+                <button class="slider-radio-2 active" type="button" aria-label="Второй слайд"></button>
               </div>
             </div>
           </li>
@@ -166,7 +164,7 @@
     <div class="catalog-items">
       <h2 class="visually-hidden">Список перфораторов</h2>
 
-      <div class="catalog-item" tabindex="26">
+      <div class="catalog-item">
         <div class="actions">
           <a class="buy" href="#">Купить</a>
           <a class="bookmark" href="#">В закладки</a>
@@ -174,11 +172,13 @@
         <div class="image">
           <img src="img/perforator-bosch-bfg-9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
         </div>
-        <div class="title">Перфоратор BOSCH BFG 9000</div>
+        <div class="title">
+          <a href="#">Перфоратор BOSCH BFG 9000</a>
+        </div>
         <div class="discount">32 500 р.</div>
         <div class="price">25 500 р.</div>
       </div>
-      <div class="catalog-item" tabindex="27">
+      <div class="catalog-item">
         <div class="actions">
           <a class="buy" href="#">Купить</a>
           <a class="bookmark" href="#">В закладки</a>
@@ -186,11 +186,13 @@
         <div class="image">
           <img src="img/perforator-bosch-bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
         </div>
-        <div class="title">Перфоратор BOSCH BFG 3000</div>
+        <div class="title">
+          <a href="#">Перфоратор BOSCH BFG 3000</a>
+        </div>
         <div class="discount">22 500 р.</div>
         <div class="price">15 500 р.</div>
       </div>
-      <div class="catalog-item" tabindex="28">
+      <div class="catalog-item">
         <div class="actions">
           <a class="buy" href="#">Купить</a>
           <a class="bookmark" href="#">В закладки</a>
@@ -198,11 +200,13 @@
         <div class="image">
           <img src="img/perforator-bosch-bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
         </div>
-        <div class="title">Перфоратор BOSCH BFG 6000</div>
+        <div class="title">
+          <a href="#">Перфоратор BOSCH BFG 6000</a>
+        </div>
         <div class="discount">30 500 р.</div>
         <div class="price">25 500 р.</div>
       </div>
-      <div class="catalog-item" tabindex="29">
+      <div class="catalog-item">
         <div class="flag flag-new">новинка</div>
         <div class="actions">
           <a class="buy" href="#">Купить</a>
@@ -211,7 +215,9 @@
         <div class="image">
           <img src="img/perforator-bosch-bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
         </div>
-        <div class="title">Перфоратор BOSCH BFG 2000</div>
+        <div class="title">
+          <a href="#">Перфоратор BOSCH BFG 2000</a>
+        </div>
         <div class="discount"></div>
         <div class="price">12 500 р.</div>
       </div>
@@ -278,7 +284,7 @@
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
       <div class="services-slider">
         <ul class="services-control">
-          <li class="services-control-item services-control-item-active">
+          <li class="services-control-item services-control-active">
             <button class="services-control-toggle button-delivery" type="button">Доставка</button>
           </li>
           <li class="services-control-item">
@@ -313,10 +319,10 @@
   <div class="about-company-container">
     <section class="about-company">
       <div class="company-information">
-        <h2 class="services-title">Компания «Техномарт»</h2>
+        <h2>Компания «Техномарт»</h2>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
           равнодушными любителей сэкономить на гастарбайтерах.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными
+        <p class="delivery-information">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными
           компаниями:</p>
         <ul>
           <li>Деловые линии</li>
@@ -349,8 +355,8 @@
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p><a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
       </div>
-      <div class="footer-navigaton">
-        <div class="footer-navigaton-shop">
+      <div class="footer-navigation">
+        <div class="footer-navigation-shop">
           <ul>
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
@@ -359,7 +365,7 @@
             <li><a href="#">Контакты</a></li>
           </ul>
         </div>
-        <div class="footer-navigaton-catalog">
+        <div class="footer-navigation-catalog">
           <ul>
             <li><a href="#">Материалы</a></li>
             <li><a href="#">Техника</a></li>
@@ -429,12 +435,12 @@
 <section class="modal map-popap">
   <h2 class="visually-hidden">Как до нас добраться</h2>
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6060545951284!2d30.32212471866115!3d59.938678861383316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1582473237007!5m2!1sru!2sru"
-          width="940" height="446" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          width="940" height="446"></iframe>
   <p>
     <img src="img/map-expanded.png" width="940" height="446"
          alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
   </p>
-  <button class="modal-close" type="button"></button>
+  <button class="modal-close" id="close-map" type="button"></button>
   <span class="visually-hidden">Закрыть</span>
 </section>
 
@@ -460,27 +466,27 @@
         <textarea id="message-field" name="message" placeholder="В свободной форме"></textarea>
       </div>
 
-      <div class="write-us-button-wrap">
+      <div class="write-us-button">
         <button class="red-button" type="submit">Отправить</button>
       </div>
     </div>
   </form>
 
-  <button class="modal-close" type="button"></button>
+  <button class="modal-close" id="close-write-us" type="button"></button>
   <span class="visually-hidden">Закрыть</span>
 </section>
 
 <section class="modal modal-add-cart">
-  <div class="top-modal-add-cart">
+  <div class="top-add-cart">
     <h2>Товар добавлен в корзину!</h2>
   </div>
 
-  <div class="bottom-modal-add-cart">
+  <div class="bottom-add-cart">
     <a class="red-button" href="#">Оформить заказ</a>
     <a class="button" href="catalog.html">Продолжить покупки</a>
   </div>
 
-  <button class="modal-close" type="button"></button>
+  <button class="modal-close" id="close-add-cart" type="button"></button>
   <span class="visually-hidden">Закрыть</span>
 </section>
 
@@ -488,5 +494,3 @@
 <script src="js/catalog-script.js"></script>
 </body>
 </html>
-
-

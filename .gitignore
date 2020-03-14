@@ -6,6 +6,7 @@
 *.pdf
 *.psd
 *.sublime*
-node_modules/
-npm-debug.*
 Thumbs.db
+preview/adb9008eff.jpg
+preview/technomart-index.psd  100 (service, RGB8) .jpg
+

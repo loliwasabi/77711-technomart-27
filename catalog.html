@@ -52,7 +52,7 @@
         </div>
       </div>
 
-      <div class="bottom-header-navigation">
+      <div class="bottom-header-nav">
         <div class="wrap">
           <div class="bottom-header-information">
             <div class="header-shop-description">
@@ -67,7 +67,7 @@
           <div class="user-navigation-wrapper">
             <ul class="user-navigation">
               <li>
-                <a class="account" href="#">
+                <a class="account" href="#" aria-label="Войти в аккаунт">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
                     <path fill="#c5c5c5"
                           d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/>
@@ -76,7 +76,7 @@
                 </a>
               </li>
               <li>
-                <a class="logout" href="#" aria-label="Кнопка выхода из аккаунта">
+                <a class="logout" href="#" aria-label="Выйти из аккаунта">
                   <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17">
                     <g fill="#c5c5c5">
                       <path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/>
@@ -91,10 +91,10 @@
 
             <ul class="user-active">
               <li>
-                <a class="user-active-orders" href="#">Мои заказы</a>
+                <a href="#">Мои заказы</a>
               </li>
               <li>
-                <a class="user-active-profile" href="#">Личный кабинет</a>
+                <a href="#">Личный кабинет</a>
               </li>
             </ul>
           </div>
@@ -103,7 +103,7 @@
 
         <nav class="shop-navigation">
           <ul>
-            <li><a href="index.html">Главная</a></li>
+            <li><a href="index.html" aria-label="На главную">Главная</a></li>
             <li><a href="#">Компания</a></li>
             <li><a href="#">Каталог</a></li>
             <li><a href="#">Новости</a></li>
@@ -151,23 +151,23 @@
               <legend>Производители:</legend>
               <ul class="brands-field-list">
                 <li>
-                  <input type="checkbox" name="bosh" id="bosh-items" checked>
+                  <input class="visually-hidden" type="checkbox" name="bosh" id="bosh-items" checked>
                   <label for="bosh-items">Bosh</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="Interskol" id="interskol-items">
+                  <input class="visually-hidden" type="checkbox" name="Interskol" id="interskol-items">
                   <label for="interskol-items">Интерскол</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="makita" id="makita-items" checked>
+                  <input class="visually-hidden" type="checkbox" name="makita" id="makita-items" checked>
                   <label for="makita-items">Makita</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="dewalt" id="dewalt-items">
+                  <input class="visually-hidden" type="checkbox" name="dewalt" id="dewalt-items">
                   <label for="dewalt-items">Dewalt</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="hitachi" id="hitachi-items">
+                  <input class="visually-hidden" type="checkbox" name="hitachi" id="hitachi-items">
                   <label for="hitachi-items">Hitachi</label>
                 </li>
               </ul>
@@ -176,11 +176,11 @@
               <legend>Питание:</legend>
               <ul class="power-field-list">
                 <li>
-                  <input type="radio" name="power" value="rechargeable" id="rechargeable-items" checked>
+                  <input class="visually-hidden" type="radio" name="power" value="rechargeable" id="rechargeable-items" checked>
                   <label for="rechargeable-items">Аккумуляторные</label>
                 </li>
                 <li>
-                  <input type="radio" name="power" value="electric" id="electric-items">
+                  <input class="visually-hidden" type="radio" name="power" value="electric" id="electric-items">
                   <label for="electric-items">Сетевые</label>
                 </li>
               </ul>
@@ -223,7 +223,6 @@
           </div>
 
           <h2 class="visually-hidden">Список перфораторов</h2>
-
           <div class="catalog-item">
             <div class="actions">
               <a class="buy" href="#">Купить</a>
@@ -232,7 +231,9 @@
             <div class="image"><img src="img/perforator-bosch-bfg-3000.jpg" width="218" height="170"
                                     alt="Перфоратор BOSCH BFG 3000">
             </div>
-            <div class="title">Перфоратор BOSCH BFG 3000</div>
+            <div class="title">
+              <a href="#">Перфоратор BOSCH BFG 3000</a>
+            </div>
             <div class="discount">22 500 р.</div>
             <div class="price">15 500 р.</div>
           </div>
@@ -245,7 +246,9 @@
             <div class="image"><img src="img/perforator-bosch-bfg-6000.jpg" width="218" height="170"
                                     alt="Перфоратор BOSCH BFG 6000">
             </div>
-            <div class="title">Перфоратор BOSCH BFG 6000</div>
+            <div class="title">
+              <a href="#">Перфоратор BOSCH BFG 6000</a>
+            </div>
             <div class="discount">30 500 р.</div>
             <div class="price">25 500 р.</div>
           </div>
@@ -259,7 +262,9 @@
             <div class="image"><img src="img/perforator-bosch-bfg-2000.jpg" width="218" height="170"
                                     alt="Перфоратор BOSCH BFG 2000">
             </div>
-            <div class="title">Перфоратор BOSCH BFG 2000</div>
+            <div class="title">
+              <a href="#">Перфоратор BOSCH BFG 2000</a>
+            </div>
             <div class="discount"></div>
             <div class="price">12 500 р.</div>
           </div>
@@ -272,7 +277,9 @@
             <div class="image"><img src="img/perforator-bosch-bfg-3000.jpg" width="218" height="170"
                                     alt="Перфоратор BOSCH BFG 3000">
             </div>
-            <div class="title">Перфоратор BOSCH BFG 3000</div>
+            <div class="title">
+              <a href="#">Перфоратор BOSCH BFG 3000</a>
+            </div>
             <div class="discount">22 500 р.</div>
             <div class="price">15 500 р.</div>
           </div>
@@ -286,7 +293,9 @@
             <div class="image"><img src="img/perforator-bosch-bfg-6000.jpg" width="218" height="170"
                                     alt="Перфоратор BOSCH BFG 6000">
             </div>
-            <div class="title">Перфоратор BOSCH BFG 6000</div>
+            <div class="title">
+              <a href="#">Перфоратор BOSCH BFG 6000</a>
+            </div>
             <div class="discount">30 500 р.</div>
             <div class="price">25 500 р.</div>
           </div>
@@ -299,7 +308,9 @@
             <div class="image"><img src="img/perforator-bosch-bfg-2000.jpg" width="218" height="170"
                                     alt="Перфоратор BOSCH BFG 2000">
             </div>
-            <div class="title">Перфоратор BOSCH BFG 2000</div>
+            <div class="title">
+              <a href="#">Перфоратор BOSCH BFG 2000</a>
+            </div>
             <div class="discount"></div>
             <div class="price">12 500 р.</div>
           </div>
@@ -313,7 +324,9 @@
             <div class="image"><img src="img/perforator-bosch-bfg-3000.jpg" width="218" height="170"
                                     alt="Перфоратор BOSCH BFG 3000">
             </div>
-            <div class="title">Перфоратор BOSCH BFG 3000</div>
+            <div class="title">
+              <a href="#">Перфоратор BOSCH BFG 3000</a>
+            </div>
             <div class="discount">22 500 р.</div>
             <div class="price">15 500 р.</div>
           </div>
@@ -326,7 +339,9 @@
             <div class="image"><img src="img/perforator-bosch-bfg-6000.jpg" width="218" height="170"
                                     alt="Перфоратор BOSCH BFG 6000">
             </div>
-            <div class="title">Перфоратор BOSCH BFG 6000</div>
+            <div class="title">
+              <a href="#">Перфоратор BOSCH BFG 6000</a>
+            </div>
             <div class="discount">30 500 р.</div>
             <div class="price">25 500 р.</div>
           </div>
@@ -339,7 +354,9 @@
             <div class="image"><img src="img/perforator-bosch-bfg-2000.jpg" width="218" height="170"
                                     alt="Перфоратор BOSCH BFG 2000">
             </div>
-            <div class="title">Перфоратор BOSCH BFG 2000</div>
+            <div class="title">
+              <a href="#">Перфоратор BOSCH BFG 2000</a>
+            </div>
             <div class="discount"></div>
             <div class="price">12 500 р.</div>
           </div>
@@ -388,8 +405,8 @@
         <p><a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
       </div>
 
-      <div class="footer-navigaton">
-        <div class="footer-navigaton-shop">
+      <div class="footer-navigation">
+        <div class="footer-navigation-shop">
           <ul>
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
@@ -398,7 +415,7 @@
             <li><a href="#">Контакты</a></li>
           </ul>
         </div>
-        <div class="footer-navigaton-catalog">
+        <div class="footer-navigation-catalog">
           <ul>
             <li><a href="#">Материалы</a></li>
             <li><a href="#">Техника</a></li>
@@ -472,16 +489,16 @@
 <!-- Модальные окна -->
 
 <section class="modal modal-add-cart">
-  <div class="top-modal-add-cart">
+  <div class="top-add-cart">
     <h2>Товар добавлен в корзину!</h2>
   </div>
 
-  <div class="bottom-modal-add-cart">
+  <div class="bottom-add-cart">
     <a class="red-button" href="#">Оформить заказ</a>
     <a class="button" href="catalog.html">Продолжить покупки</a>
   </div>
 
-  <button class="modal-close" type="button"></button>
+  <button id="close-add-cart" class="modal-close" type="button"></button>
   <span class="visually-hidden">Закрыть</span>
 </section>
 <script src="js/catalog-script.js"></script>
