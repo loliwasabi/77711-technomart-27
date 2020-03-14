@@ -217,7 +217,7 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 150px;
+  max-width: 150px;
   padding: 0 20px;
 
   font-size: 17px;
@@ -312,7 +312,7 @@ button {
   justify-content: center;
   align-items: center;
   width: 290px;
-  padding: 5px 53px;
+  padding: 5px 52px;
 }
 
 .header-shop-description p {
@@ -606,6 +606,12 @@ button {
   background-color: #1d2739;
   opacity: 0.5;
 }
+
+.shop-navigation .current {
+  background-color: #1d2739;
+  opacity: 0.5;
+}
+
 
 .showcase {
   margin: 59px 0 42px -10px;
@@ -960,23 +966,18 @@ button {
   background-color: #ba2732;
 }
 
-.showcase-slider-controls,
-.showcase-slider-indicators {
+.showcase-slider-controls {
+  content: "";
   position: absolute;
-}
-
-.showcase-slider-controls button,
-.showcase-slider-indicators button {
-  padding: 0;
-
-  background: none;
+  top: 60px;
+  left: 0;
 }
 
 .showcase-slider-l::before,
 .showcase-slider-r::before {
   content: "";
   position: absolute;
-  top: 110px;
+  top: 48px;
 
   width: 22px;
   height: 40px;
@@ -992,10 +993,25 @@ button {
 }
 
 .showcase-slider-r::before {
-  left: 578px;
+  left: 575px;
 
   background-image: url("../img/icon-right.svg");
   background-repeat: no-repeat;
+}
+
+
+.showcase-slider-indicators {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+.showcase-slider-controls button,
+.showcase-slider-indicators button {
+  padding: 0;
+
+  background: none;
 }
 
 .showcase-slider-indicators label {
@@ -1010,7 +1026,7 @@ button {
 .slider-radio-2::before {
   content: "";
   position: absolute;
-  top: 220px;
+  top: 195px;
 
   width: 10px;
   height: 10px;
@@ -1033,7 +1049,7 @@ button {
 .slider-radio-2.active::before {
   content: "";
   position: absolute;
-  top: 220px;
+  top: 195px;
 
   width: 10px;
   height: 10px;
@@ -1586,7 +1602,7 @@ button {
 
 .company-information p,
 .contacts-information p {
-  margin: 15px 0 12px;
+  margin: 15px 0 11px;
   padding: 0;
 
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1635,7 +1651,7 @@ button {
 
 .company-information .red-button {
   width: 220px;
-  margin: 14px 0 0 0;
+  margin: 16px 0 0 0;
 }
 
 .contacts-information .red-button {

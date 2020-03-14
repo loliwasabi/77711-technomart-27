@@ -102,14 +102,15 @@ var radio2 = slider.querySelector(".slider-radio-2");
 var cnt = slideItem.length - 1;
 
 controlLeft.addEventListener("click", function (evt) {
-  if (evt.preventDefault(), 0 < cnt) {
+  evt.preventDefault();
+  if (0 < cnt) {
     --cnt;
     for (var t = 0; t < slideItem.length; t++)
       slideItem[t].classList.remove("slide-show");
     slideItem[cnt].classList.add("slide-show");
   } else {
     slideItem[cnt].classList.remove("slide-error");
-    slideItem[cnt].offsetWidth = slideItem[cnt].offsetWidth;
+    // slideItem[cnt].offsetWidth = slideItem[cnt].offsetWidth;
     slideItem[cnt].classList.add("slide-error");
     radio2.classList.remove("active");
     radio1.classList.add("active");
@@ -117,14 +118,15 @@ controlLeft.addEventListener("click", function (evt) {
 });
 
 controlRight.addEventListener("click", function (evt) {
-  if (evt.preventDefault(), cnt < slideItem.length - 1) {
+  evt.preventDefault();
+  if (cnt < slideItem.length - 1) {
     cnt += 1;
     for (var t = 0; t < slideItem.length; t++)
       slideItem[t].classList.remove("slide-show");
     slideItem[cnt].classList.add("slide-show");
   } else {
     slideItem[cnt].classList.remove("slide-error");
-    slideItem[cnt].offsetWidth = slideItem[cnt].offsetWidth;
+    // slideItem[cnt].offsetWidth = slideItem[cnt].offsetWidth;
     slideItem[cnt].classList.add("slide-error");
     radio1.classList.remove("active");
     radio2.classList.add("active");

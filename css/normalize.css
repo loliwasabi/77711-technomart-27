@@ -65,7 +65,7 @@ hr {
 
 pre {
   font-size: 1em; /* 2 */
-  font-family: monospace, monospace; /* 1 */
+  font-family: monospace; /* 1 */
 }
 
 /* Text-level semantics
@@ -86,7 +86,6 @@ a {
 
 abbr[title] {
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
 
   border-bottom: none; /* 1 */
 }
@@ -109,7 +108,7 @@ code,
 kbd,
 samp {
   font-size: 1em; /* 2 */
-  font-family: monospace, monospace; /* 1 */
+  font-family: monospace; /* 1 */
 }
 
 /**
