@@ -3,10 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext,cyrillic" rel="stylesheet"
-        type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic-ext,cyrillic" rel="stylesheet"
-        type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans:400,400i,700,700i&display=swap&subset=cyrillic"
+        rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style-min.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -64,7 +62,7 @@
         <div class="user-navigation-wrapper">
           <ul class="user-navigation">
             <li>
-              <a class="account" href="#" aria-label="Войти в аккаунт">
+              <a class="account" href="login.html" aria-label="Войти в аккаунт">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
                   <path fill="#c5c5c5"
                         d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/>
@@ -72,7 +70,7 @@
                 Равшан Джамшутович</a>
             </li>
             <li>
-              <a class="logout" href="#" aria-label="Выйти из аккаунта">
+              <a class="logout" href="logout.html" aria-label="Выйти из аккаунта">
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17">
                   <g fill="#c5c5c5">
                     <path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/>
@@ -98,7 +96,7 @@
         <ul>
           <li><a href="index.html" aria-label="На главную">Главная</a></li>
           <li><a href="#">Компания</a></li>
-          <li class="current"><a href="#">Каталог</a></li>
+          <li><a href="#">Каталог</a></li>
           <li><a href="#">Новости</a></li>
           <li><a href="#">Спецпредложения</a></li>
           <li><a href="#">Доставка</a></li>
@@ -135,7 +133,7 @@
             <div class="price-input">
               <input class="price-input-min" type="text" name="price-min" value="0" aria-label="Минимум">
               <span>—</span>
-              <input class="price-input-max" type="text" name="price-max" value="3000" aria-label="Максимум">
+              <input class="price-input-max" type="text" name="price-max" value="30000" aria-label="Максимум">
             </div>
           </fieldset>
           <fieldset class="brands-field">
@@ -143,7 +141,7 @@
             <ul class="brands-field-list">
               <li>
                 <input class="visually-hidden" type="checkbox" name="bosh" id="bosh-items" checked>
-                <label for="bosh-items">Bosh</label>
+                <label for="bosh-items">Bosch</label>
               </li>
               <li>
                 <input class="visually-hidden" type="checkbox" name="Interskol" id="interskol-items">
@@ -225,8 +223,8 @@
           <div class="title">
             <a href="#">Перфоратор BOSCH BFG 3000</a>
           </div>
-          <div class="discount">22 500 р.</div>
-          <div class="price">15 500 р.</div>
+          <div class="discount">22500 Р.</div>
+          <div class="price">15500 Р.</div>
         </div>
         <div class="catalog-item">
           <div class="actions">
@@ -239,8 +237,8 @@
           <div class="title">
             <a href="#">Перфоратор BOSCH BFG 6000</a>
           </div>
-          <div class="discount">30 500 р.</div>
-          <div class="price">25 500 р.</div>
+          <div class="discount">30500 Р.</div>
+          <div class="price">25500 Р.</div>
         </div>
         <div class="catalog-item">
           <div class="flag flag-new">новинка</div>
@@ -255,7 +253,7 @@
             <a href="#">Перфоратор BOSCH BFG 2000</a>
           </div>
           <div class="discount"></div>
-          <div class="price">12 500 р.</div>
+          <div class="price">12500 Р.</div>
         </div>
         <div class="catalog-item">
           <div class="actions">
@@ -268,8 +266,8 @@
           <div class="title">
             <a href="#">Перфоратор BOSCH BFG 3000</a>
           </div>
-          <div class="discount">22 500 р.</div>
-          <div class="price">15 500 р.</div>
+          <div class="discount">22500 Р.</div>
+          <div class="price">15500 Р.</div>
         </div>
         <div class="catalog-item">
           <div class="flag flag-new">новинка</div>
@@ -283,8 +281,8 @@
           <div class="title">
             <a href="#">Перфоратор BOSCH BFG 6000</a>
           </div>
-          <div class="discount">30 500 р.</div>
-          <div class="price">25 500 р.</div>
+          <div class="discount">30500 Р.</div>
+          <div class="price">25500 Р.</div>
         </div>
         <div class="catalog-item">
           <div class="actions">
@@ -298,7 +296,7 @@
             <a href="#">Перфоратор BOSCH BFG 2000</a>
           </div>
           <div class="discount"></div>
-          <div class="price">12 500 р.</div>
+          <div class="price">12500 Р.</div>
         </div>
         <div class="catalog-item">
           <div class="flag flag-new">новинка</div>
@@ -312,8 +310,8 @@
           <div class="title">
             <a href="#">Перфоратор BOSCH BFG 3000</a>
           </div>
-          <div class="discount">22 500 р.</div>
-          <div class="price">15 500 р.</div>
+          <div class="discount">22500 Р.</div>
+          <div class="price">15500 Р.</div>
         </div>
         <div class="catalog-item">
           <div class="actions">
@@ -326,8 +324,8 @@
           <div class="title">
             <a href="#">Перфоратор BOSCH BFG 6000</a>
           </div>
-          <div class="discount">30 500 р.</div>
-          <div class="price">25 500 р.</div>
+          <div class="discount">30500 Р.</div>
+          <div class="price">25500 Р.</div>
         </div>
         <div class="catalog-item">
           <div class="actions">
@@ -341,7 +339,7 @@
             <a href="#">Перфоратор BOSCH BFG 2000</a>
           </div>
           <div class="discount"></div>
-          <div class="price">12 500 р.</div>
+          <div class="price">12500 Р.</div>
         </div>
 
         <ul class="pagination-list">
@@ -471,10 +469,12 @@
     <a class="red-button" href="#">Оформить заказ</a>
     <a class="button" href="catalog.html">Продолжить покупки</a>
   </div>
-  <button id="close-add-cart" class="modal-close" type="button"></button>
-  <span class="visually-hidden">Закрыть</span>
+  <button id="close-add-cart" class="modal-close" type="button">
+    <span class="visually-hidden">Закрыть</span>
+  </button>
+
 </section>
 
-<script src="js/catalog-script-min.js"></script>
+<script src="js/script-min.js"></script>
 </body>
 </html>
