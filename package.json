@@ -1,0 +1,30 @@
+{
+  "name": "personal_prject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Olga Lozhkina",
+  "license": "ISC",
+  "devDependencies": {
+    "csscomb": "^4.3.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-csscomb": "^3.1.0",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-stylelint": "^13.0.0",
+    "gulp-uncss": "^1.0.6",
+    "stylelint": "^13.2.0",
+    "stylelint-config-htmlacademy": "^0.1.4",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "dependencies": {
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}
